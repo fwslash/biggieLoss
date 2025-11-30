@@ -1,0 +1,19 @@
+services:
+  redis:
+    image: redis:6-alpine
+    container_name: redis
+    ports:
+      - "6379:6379" 
+    restart: always
+
+  biggie-loss:
+    build: .
+    container_name: biggieLoss
+    privileged: true 
+    devices:
+      - /dev/fuse
+    command: /mnt/biggie
+    depends_on:
+      - redis
+    environment:
+        REDIS_ENDPOINT: redis:6379

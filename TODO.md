@@ -1,0 +1,5 @@
+- [ ] Fix df output
+- [ ] Random permissions 
+- [ ] Large files fail for some reason
+- [ ] Unzip does not work
+- [ ] tests
