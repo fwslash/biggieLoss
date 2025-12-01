@@ -3,3 +3,4 @@
 - [ ] Large files fail for some reason
 - [ ] Unzip does not work
 - [ ] tests
+- [ ] make file sometimes bigger when you want to delete it
